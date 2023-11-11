@@ -1,0 +1,2 @@
+export const GET_JORNEY_BY_USER_ID = 'GET_JORNEY_BY_USER_ID'
+export const SET_ALL_JORNEY = 'SET_ALL_JORNEY'

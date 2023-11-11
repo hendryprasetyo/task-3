@@ -1,0 +1,8 @@
+export { default as HomePage } from './Home'
+export { default as NotFoundPage } from './NotFound'
+export { default as LoginPage } from './Login'
+export { default as RegisterPage } from './Register'
+export { default as ProfilePage } from './Profile'
+export { default as AddJorneyPage } from './AddJorney'
+export { default as BookMarkPage } from './BookMark'
+export { default as DetailJorneyPage } from './DetailJorney'

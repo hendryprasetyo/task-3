@@ -1,0 +1,59 @@
+@import '../../styles/base';
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  .wrapper__profile {
+    width: 100%;
+    height: max-content;
+    @include displayFlex(column, center, center);
+    margin-top: 48px;
+    .avatar {
+      width: 200px;
+      height: 200px;
+      object-fit: fill;
+    }
+    .name__user {
+      color: $primary-text;
+      font-family: 'Roboto';
+      @include font-size(24px);
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-top: 22px;
+    }
+    .email__user {
+      color: $secondary-text;
+      margin-top: 5px;
+      font-family: 'Roboto';
+      @include font-size(18px);
+      font-style: italic;
+      font-weight: 100;
+      line-height: normal;
+    }
+    .btn {
+      color: #fff;
+      text-align: center;
+      font-family: 'Poppins';
+      @include font-size(14px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      border-radius: 5px;
+      background: #2e86de;
+      width: 140px;
+      height: 30px;
+      flex-shrink: 0;
+      @include displayFlex(row, center, center);
+      margin-top: 27px;
+    }
+  }
+  .card__wrapper {
+    @include displayFlex(row, center, center);
+    row-gap: 47px;
+    column-gap: 47px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+  }
+}

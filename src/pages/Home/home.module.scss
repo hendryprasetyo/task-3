@@ -1,0 +1,60 @@
+@import '../../styles/base';
+.wrapper__banner {
+  background-image: url('../../assets/images/banner-hero.svg');
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 510px;
+  background-repeat: no-repeat;
+  @include screen('small') {
+    height: 50vh;
+  }
+  .container {
+    @include displayFlex(column, center, start);
+    height: 100%;
+    gap: 1rem;
+    font-family: 'Roboto';
+    @include screen('small') {
+      @include displayFlex(column, end, start);
+      padding-bottom: 2rem;
+      gap: 0.5rem;
+    }
+    .title__hero {
+      color: #fff;
+      @include font-size(64px);
+      font-style: italic;
+      font-weight: 100;
+      line-height: 112.2%;
+      letter-spacing: -1.92px;
+      max-width: 450px;
+      @include screen('small') {
+        @include font-size(34px);
+        max-width: 100%;
+      }
+    }
+    .paragraf__hero {
+      color: #fff;
+      @include font-size(24px);
+      font-style: italic;
+      font-weight: 100;
+      line-height: normal;
+      max-width: 50%;
+      @include screen('small') {
+        @include font-size(16px);
+        max-width: 90%;
+      }
+    }
+  }
+}
+.wrapper__content {
+  width: 100%;
+  min-height: 100vh;
+  .card__wrapper {
+    @include displayFlex(row, center, center);
+    row-gap: 47px;
+    column-gap: 47px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+  }
+}

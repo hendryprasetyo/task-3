@@ -1,0 +1,78 @@
+@import '../../styles/base';
+.form {
+  @include displayFlex(column, center, start);
+  @include padding(null, 4rem, null, 4rem);
+  margin-top: 59px;
+  gap: 20px;
+  width: 100%;
+  @include screen('small') {
+    @include padding(null, 0.5rem, null, 0.5rem);
+  }
+  .wrapper__input {
+    @include displayFlex(column, center, start);
+    gap: 20px;
+    width: 100%;
+    font-family: 'Poppins';
+    @include screen('small') {
+      gap: 10px;
+    }
+    .label {
+      color: $primary-text;
+      @include font-size(24px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @include screen('small') {
+        @include font-size(16px);
+        font-weight: 500;
+      }
+    }
+    .input {
+      border-radius: 5px;
+      border: 1px solid #a6a6a6;
+      background: #fff;
+      width: 100%;
+      height: 50px;
+      outline: none;
+      @include font-size(18px);
+      @include padding(null, 1.4rem, null, 1.4rem);
+      color: $secondary-text;
+      @include screen('small') {
+        @include font-size(14px);
+        @include padding(null, 1rem, null, 1rem);
+        font-weight: 500;
+        height: 42px;
+      }
+    }
+    .description {
+      background-color: #fff;
+      width: 100%;
+      height: 215px;
+      @include screen('small') {
+        height: 100%;
+      }
+    }
+  }
+  .wrapper__btn {
+    @include displayFlex(row, end, center);
+    width: 100%;
+    margin-top: 2rem;
+    @include screen('small') {
+      margin-top: 0.5rem;
+    }
+    .btn__submit {
+      border: none;
+      border-radius: 5px;
+      background: $bg-btn-primary;
+      color: #fff;
+      text-align: center;
+      font-family: 'Poppins';
+      font-size: 14px;
+      font-style: normal;
+      cursor: pointer;
+      font-weight: 700;
+      line-height: normal;
+      @include padding(2px, 2rem, 2px, 2rem);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../styles/base';
+.text {
+  color: #000;
+  font-family: 'Roboto';
+  @include font-size(48px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  @include screen('small') {
+    @include font-size(28px);
+  }
+}

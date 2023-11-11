@@ -1,0 +1,16 @@
+@import '../../styles/base';
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  .card__wrapper {
+    @include displayFlex(row, center, center);
+    row-gap: 47px;
+    column-gap: 47px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 141px;
+    @include screen('small') {
+      margin-top: 50px;
+    }
+  }
+}

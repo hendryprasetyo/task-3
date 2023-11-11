@@ -1,0 +1,4 @@
+export const GET_ALL_JORNEY = 'GET_ALL_JORNEY'
+export const SET_ALL_JORNEY = 'SET_ALL_JORNEY'
+export const ADD_TO_BOOK_MARK = 'ADD_TO_BOOK_MARK'
+export const SET_ALL_BOOK_MARK = 'SET_ALL_BOOK_MARK'
